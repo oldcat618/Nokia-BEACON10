@@ -1,0 +1,699 @@
+# dmesg
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x411fd090]
+[    0.000000] Linux version 5.4.164 (zhenwxu@aont12-hz-rd10-u16) (gcc version 7.5.0 (OpenWrt GCC 7.5.0 unknown)) #0 SMP PREEMPT Thu Feb 9 05:56:03 2023
+[    0.000000] Machine model: Qualcomm Technologies, Inc. IPQ9574/AP-AL02-C2
+[    0.000000] Reserved memory: created DMA memory pool at 0x0000000054700000, size 9 MiB
+[    0.000000] OF: reserved mem: initialized node dma_pool0@54700000, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created DMA memory pool at 0x0000000055000000, size 9 MiB
+[    0.000000] OF: reserved mem: initialized node dma_pool1@55000000, compatible id shared-dma-pool
+[    0.000000] On node 0 totalpages: 212991
+[    0.000000]   DMA32 zone: 3328 pages used for memmap
+[    0.000000]   DMA32 zone: 0 pages reserved
+[    0.000000]   DMA32 zone: 212991 pages, LIFO batch:63
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 24 pages/cpu s59352 r8192 d30760 u98304
+[    0.000000] pcpu-alloc: s59352 r8192 d30760 u98304 alloc=24*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: kernel page table isolation disabled by kernel configuration
+[    0.000000] ARM_SMCCC_ARCH_WORKAROUND_1 missing from firmware
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 209663
+[    0.000000] Kernel command line: console=ttyMSM0,115200n8 root=PARTUUID=dfd4d822-b1f9-4361-1a94-81fe271fa562 gpt rootwait clk_ignore_unused
+[    0.000000] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 822240K/851964K available (6974K kernel code, 606K rwdata, 2328K rodata, 576K init, 393K bss, 29724K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000]  Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv2m: range[mem 0x0b00c000-0x0b00cffc], SPI[640:671]
+[    0.000000] GICv2m: range[mem 0x0b00d000-0x0b00dffc], SPI[672:703]
+[    0.000000] GICv2m: range[mem 0x0b00e000-0x0b00effc], SPI[704:735]
+[    0.000000] random: get_random_bytes called from start_kernel+0x344/0x4bc with crng_init=0
+[    0.000000] arch_timer: cp15 and mmio timer(s) running at 24.00MHz (virt/virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000004] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.000274] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=240000)
+[    0.000283] pid_max: default: 32768 minimum: 301
+[    0.000374] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.000384] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.001287] ASID allocator initialised with 65536 entries
+[    0.001340] rcu: Hierarchical SRCU implementation.
+[    0.002592] MSM Memory Dump base table set up
+[    0.002609] MSM Memory Dump apps data table set up
+[    0.002726] smp: Bringing up secondary CPUs ...
+[    0.004119] Detected VIPT I-cache on CPU1
+[    0.004163] CPU1: Booted secondary processor 0x0000000001 [0x411fd090]
+[    0.005665] Detected VIPT I-cache on CPU2
+[    0.005705] CPU2: Booted secondary processor 0x0000000002 [0x411fd090]
+[    0.007174] Detected VIPT I-cache on CPU3
+[    0.007214] CPU3: Booted secondary processor 0x0000000003 [0x411fd090]
+[    0.007302] smp: Brought up 1 node, 4 CPUs
+[    0.007320] SMP: Total of 4 processors activated.
+[    0.007325] CPU features: detected: 32-bit EL0 Support
+[    0.007330] CPU features: detected: CRC32 instructions
+[    0.007365] CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+[    0.007370] CPU: All CPU(s) started at EL1
+[    0.007502] alternatives: patching kernel code
+[    0.015735] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.015751] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.015834] pinctrl core: initialized pinctrl subsystem
+[    0.016388] NET: Registered protocol family 16
+[    0.016705] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.017012] cpuidle: using governor ladder
+[    0.017030] cpuidle: using governor menu
+[    0.017124] NET: Registered protocol family 42
+[    0.017232] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.018520] printk: console [pstore-1] enabled
+[    0.018527] pstore: Registered ramoops as persistent store backend
+[    0.018534] ramoops: using 0x200000@0x55900000, ecc: 0
+[    0.026220] qcom,gcc-ipq9574 1800000.gcc: Registered ipq9574 GCC clock provider
+[    0.027125] gpiochip_find_base: found new base at 447
+[    0.027145] gpio gpiochip0: (1000000.pinctrl): created GPIO range 0->64 ==> 1000000.pinctrl PIN 0->64
+[    0.027273] gpio gpiochip0: (1000000.pinctrl): added GPIO chardev (254:0)
+[    0.027320] gpiochip_setup_dev: registered GPIOs 447 to 511 on device: gpiochip0 (1000000.pinctrl)
+[    0.037188] qcom,cpr4-apss-regulator b018000.cpr4-ctrl: CPR valid fuse count: 4
+[    0.037389] qcom,cpr3-npu-regulator a4000.npu-cpr: NPU CPR valid fuse count: 2
+[    0.038405] msm_sps_probe: sps:sps is ready
+[    1.434919] qcom,nsscc-ipq9574 39b00000.nsscc: Registered NSS CC clocks
+[    1.435182] reg-fixed-voltage soc:dummy-regulator@0: GPIO lookup for consumer (null)
+[    1.435188] reg-fixed-voltage soc:dummy-regulator@0: using device tree for GPIO lookup
+[    1.435204] of_get_named_gpiod_flags: can't parse 'gpios' property of node '/soc/dummy-regulator@0[0]'
+[    1.435216] of_get_named_gpiod_flags: can't parse 'gpio' property of node '/soc/dummy-regulator@0[0]'
+[    1.435223] reg-fixed-voltage soc:dummy-regulator@0: using lookup tables for GPIO lookup
+[    1.435229] reg-fixed-voltage soc:dummy-regulator@0: No GPIO consumer (null) found
+[    1.435407] reg-fixed-voltage soc:dummy-regulator@1: GPIO lookup for consumer (null)
+[    1.435413] reg-fixed-voltage soc:dummy-regulator@1: using device tree for GPIO lookup
+[    1.435426] of_get_named_gpiod_flags: can't parse 'gpios' property of node '/soc/dummy-regulator@1[0]'
+[    1.435437] of_get_named_gpiod_flags: can't parse 'gpio' property of node '/soc/dummy-regulator@1[0]'
+[    1.435443] reg-fixed-voltage soc:dummy-regulator@1: using lookup tables for GPIO lookup
+[    1.435449] reg-fixed-voltage soc:dummy-regulator@1: No GPIO consumer (null) found
+[    1.435985] pps_core: LinuxPPS API ver. 1 registered
+[    1.435994] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    1.436008] PTP clock support registered
+[    1.437596] s1: supplied by regulator-dummy
+[    1.437820] workqueue: max_active 576 requested for napi_workq is out of range, clamping between 1 and 512
+[    1.438328] s2: supplied by regulator-dummy
+[    1.438523] clocksource: Switched to clocksource arch_sys_counter
+[    1.439022] thermal_sys: Registered thermal governor 'step_wise'
+[    1.439025] thermal_sys: Registered thermal governor 'user_space'
+[    1.440543] s4: supplied by regulator-dummy
+[    1.440628] NET: Registered protocol family 2
+[    1.440874] IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    1.441576] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    1.441601] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    1.441659] TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear)
+[    1.441759] TCP: Hash tables configured (established 8192 bind 8192)
+[    1.441821] UDP hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    1.441850] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    1.441970] NET: Registered protocol family 1
+[    1.441992] PCI: CLS 0 bytes, default 64
+[    1.442522] hw perfevents: enabled with armv8_cortex_a73 PMU driver, 7 counters available
+[    1.443272] Initialise system trusted keyrings
+[    1.443371] workingset: timestamp_bits=46 max_order=18 bucket_order=0
+[    1.446404] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.446413] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    1.459292] Key type asymmetric registered
+[    1.459301] Asymmetric key parser 'x509' registered
+[    1.459857] qcom-qmp-phy 7d000.ssphy: 7d000.ssphy supply vdda-phy not found, using dummy regulator
+[    1.459905] qcom-qmp-phy 7d000.ssphy: 7d000.ssphy supply vdda-pll not found, using dummy regulator
+[    1.460179] qcom-qmp-phy 7d000.ssphy: Registered Qcom-QMP phy
+[    1.460516] qcom-qmp-phy 8c000.phy: Registered Qcom-QMP phy
+[    1.460805] qcom-qmp-phy f4000.phy: Registered Qcom-QMP phy
+[    1.462504] bam-dma-engine 704000.dma: num-channels unspecified in dt
+[    1.462514] bam-dma-engine 704000.dma: num-ees unspecified in dt
+[    1.463155] bam-dma-engine 7884000.dma: qcom,controlled-remotely unspecified
+[    1.464290] global timer is null
+[    1.464425] CPU: IPQ9574, SoC Version: 1.1
+[    1.464705] msm_rpm_log_probe: OK
+[    1.468681] TZ SMMU State: SMMU Stage2 Enabled
+[    1.468783] TZ Log : Will warn on Access Violation, as paniconaccessviolation is not set
+[    1.470148] 78000.qcom,msm-eud: ttyEUD0 at MMIO 0x0 (irq = 145, base_baud = 0) is a EUD UART
+[    1.470670] msm_serial 78b1000.serial: msm_serial: detected port #0
+[    1.470695] msm_serial 78b1000.serial: uartclk = 1824768
+[    1.470727] 78b1000.serial: ttyMSM0 at MMIO 0x78b1000 (irq = 14, base_baud = 114048) is a MSM
+[    1.470742] msm_serial: console setup on port #0
+[    2.204412] printk: console [ttyMSM0] enabled
+[    2.209305] msm_serial 78b3000.serial: msm_serial: detected port #1
+[    2.213353] msm_serial 78b3000.serial: uartclk = 24000000
+[    2.219450] 78b3000.serial: ttyMSM1 at MMIO 0x78b3000 (irq = 15, base_baud = 1500000) is a MSM
+[    2.225135] msm_serial: driver initialized
+[    2.233692] random: fast init done
+[    2.237697] random: crng init done
+[    2.241949] brd: module loaded
+[    2.246317] loop: module loaded
+[    2.248371] spi_qup 78b5000.spi: IN:block:16, fifo:64, OUT:block:16, fifo:64
+[    2.250808] spi-nor spi0.0: unrecognized JEDEC id bytes: ff ff ff ff ff ff
+[    2.258228] mdio_bus fixed-0: GPIO lookup for consumer reset
+[    2.258233] mdio_bus fixed-0: using lookup tables for GPIO lookup
+[    2.258239] mdio_bus fixed-0: No GPIO consumer reset found
+[    2.258252] libphy: Fixed MDIO Bus: probed
+[    2.264541] of_get_named_gpiod_flags: parsed 'phy-reset-gpio' property of node '/soc/mdio@90000[0]' - status (0)
+[    2.484598] of_get_named_gpiod_flags: can't parse 'phy-reset-gpio' property of node '/soc/mdio@90000[1]'
+[    2.484604] qca-mdio 90000.mdio: Could not find phy-reset-gpio
+[    2.484711] mdio_bus 90000.mdio: GPIO lookup for consumer reset
+[    2.484716] mdio_bus 90000.mdio: using device tree for GPIO lookup
+[    2.484730] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/soc/mdio@90000[0]'
+[    2.484741] of_get_named_gpiod_flags: can't parse 'reset-gpio' property of node '/soc/mdio@90000[0]'
+[    2.484749] mdio_bus 90000.mdio: using lookup tables for GPIO lookup
+[    2.484754] mdio_bus 90000.mdio: No GPIO consumer reset found
+[    2.484757] libphy: qca_mdio: probed
+[    2.489522] mdio_bus 90000.mdio:00: GPIO lookup for consumer reset
+[    2.489527] mdio_bus 90000.mdio:00: using device tree for GPIO lookup
+[    2.489541] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/soc/mdio@90000/ethernet-phy@0[0]'
+[    2.489554] of_get_named_gpiod_flags: can't parse 'reset-gpio' property of node '/soc/mdio@90000/ethernet-phy@0[0]'
+[    2.489560] mdio_bus 90000.mdio:00: using lookup tables for GPIO lookup
+[    2.489565] mdio_bus 90000.mdio:00: No GPIO consumer reset found
+[    2.489764] mdio_bus 90000.mdio:01: GPIO lookup for consumer reset
+[    2.489769] mdio_bus 90000.mdio:01: using device tree for GPIO lookup
+[    2.489783] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/soc/mdio@90000/ethernet-phy@1[0]'
+[    2.489795] of_get_named_gpiod_flags: can't parse 'reset-gpio' property of node '/soc/mdio@90000/ethernet-phy@1[0]'
+[    2.489801] mdio_bus 90000.mdio:01: using lookup tables for GPIO lookup
+[    2.489806] mdio_bus 90000.mdio:01: No GPIO consumer reset found
+[    2.489986] mdio_bus 90000.mdio:02: GPIO lookup for consumer reset
+[    2.489991] mdio_bus 90000.mdio:02: using device tree for GPIO lookup
+[    2.490004] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/soc/mdio@90000/ethernet-phy@2[0]'
+[    2.490016] of_get_named_gpiod_flags: can't parse 'reset-gpio' property of node '/soc/mdio@90000/ethernet-phy@2[0]'
+[    2.490022] mdio_bus 90000.mdio:02: using lookup tables for GPIO lookup
+[    2.490027] mdio_bus 90000.mdio:02: No GPIO consumer reset found
+[    2.490216] mdio_bus 90000.mdio:03: GPIO lookup for consumer reset
+[    2.490222] mdio_bus 90000.mdio:03: using device tree for GPIO lookup
+[    2.490236] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/soc/mdio@90000/ethernet-phy@3[0]'
+[    2.490248] of_get_named_gpiod_flags: can't parse 'reset-gpio' property of node '/soc/mdio@90000/ethernet-phy@3[0]'
+[    2.490254] mdio_bus 90000.mdio:03: using lookup tables for GPIO lookup
+[    2.490259] mdio_bus 90000.mdio:03: No GPIO consumer reset found
+[    2.490435] mdio_bus 90000.mdio:07: GPIO lookup for consumer reset
+[    2.490441] mdio_bus 90000.mdio:07: using device tree for GPIO lookup
+[    2.490454] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/soc/mdio@90000/ethernet-phy@4[0]'
+[    2.490466] of_get_named_gpiod_flags: can't parse 'reset-gpio' property of node '/soc/mdio@90000/ethernet-phy@4[0]'
+[    2.490472] mdio_bus 90000.mdio:07: using lookup tables for GPIO lookup
+[    2.490477] mdio_bus 90000.mdio:07: No GPIO consumer reset found
+[    2.490909] mdio_bus 90000.mdio:08: GPIO lookup for consumer reset
+[    2.490914] mdio_bus 90000.mdio:08: using device tree for GPIO lookup
+[    2.490929] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/soc/mdio@90000/ethernet-phy@5[0]'
+[    2.490940] of_get_named_gpiod_flags: can't parse 'reset-gpio' property of node '/soc/mdio@90000/ethernet-phy@5[0]'
+[    2.490947] mdio_bus 90000.mdio:08: using lookup tables for GPIO lookup
+[    2.490952] mdio_bus 90000.mdio:08: No GPIO consumer reset found
+[    2.491005] qca-mdio 90000.mdio: qca-mdio driver was registered
+[    2.493174] i2c /dev entries driver
+[    2.506818] sdhci: Secure Digital Host Controller Interface driver
+[    2.506839] sdhci: Copyright(c) Pierre Ossman
+[    2.511936] sdhci-pltfm: SDHCI platform and OF driver helper
+[    2.516642] sdhci_msm 7804000.sdhci: GPIO lookup for consumer wp
+[    2.516648] sdhci_msm 7804000.sdhci: using device tree for GPIO lookup
+[    2.516662] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/soc/sdhci@7804000[0]'
+[    2.516675] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/soc/sdhci@7804000[0]'
+[    2.516682] sdhci_msm 7804000.sdhci: using lookup tables for GPIO lookup
+[    2.516688] sdhci_msm 7804000.sdhci: No GPIO consumer wp found
+[    2.516730] sdhci_msm 7804000.sdhci: sdhci_msm_get_ice_device_vops: ICE device is not enabled
+[    2.551221] mmc0: SDHCI controller on 7804000.sdhci [7804000.sdhci] using ADMA 64-bit
+[    2.556156]
+[    2.556156] Version Rollback Feature Disabled
+[    2.562930] remoteproc remoteproc0: cd00000.remoteproc is available
+[    2.564045] coresight-tmc 6047000.etf: invalid cti data
+[    2.572177] coresight coresight-etm0: CPU0: ETM v4.0 initialized
+[    2.575270] coresight-etm4x 6293000.etm: CPU0: (null) initialized
+[    2.581779] coresight coresight-etm1: CPU1: ETM v4.0 initialized
+[    2.587500] coresight-etm4x 6297000.etm: CPU1: (null) initialized
+[    2.593885] coresight coresight-etm2: CPU2: ETM v4.0 initialized
+[    2.599458] coresight-etm4x 629b000.etm: CPU2: (null) initialized
+[    2.605757] coresight coresight-etm3: CPU3: ETM v4.0 initialized
+[    2.611528] coresight-etm4x 629f000.etm: CPU3: (null) initialized
+[    2.617766] coresight-stm 6002000.stm: coresight-stm : stm_register_device failed, probing deferred
+[    2.623648] OF: graph: no port node found in /soc/cti@6291000
+[    2.632577] OF: graph: no port node found in /soc/cti@6295000
+[    2.638462] OF: graph: no port node found in /soc/cti@6299000
+[    2.644175] OF: graph: no port node found in /soc/cti@629d000
+[    2.650239] OF: graph: no port node found in /soc/csr@6001000
+[    2.655604] coresight-csr 6001000.csr: CSR initialized: coresight-csr
+[    2.661976] NET: Registered protocol family 10
+[    2.668254] Segment Routing with IPv6
+[    2.672083] NET: Registered protocol family 17
+[    2.675778] Bridge firewalling registered
+[    2.680072] 8021q: 802.1Q VLAN Support v1.8
+[    2.684318] Loading compiled-in X.509 certificates
+[    2.688448] pstore: Using crash dump compression: deflate
+[    2.709232] qcom,cpr4-apss-regulator b018000.cpr4-ctrl: CPR valid fuse count: 4
+[    2.709401] cpr4_ipq807x_apss_read_fuse_data: apc_corner: speed bin = 0
+[    2.715336] cpr4_ipq807x_apss_read_fuse_data: apc_corner: CPR fusing revision = 2
+[    2.722030] cpr4_ipq807x_apss_read_fuse_data: apc_corner: CPR misc fuse value = 0
+[    2.729643] cpr4_ipq807x_apss_read_fuse_data: apc_corner: Voltage boost fuse config = 0 boost = disable
+[    2.737113] cpr3_mem_acc_init: apc: not using memory accelerator regulator
+[    2.746279] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused      SVS: open-loop= 635000 uV
+[    2.753243] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused      NOM: open-loop= 752500 uV
+[    2.763208] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused    TURBO: open-loop= 847500 uV
+[    2.773067] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused   STURBO: open-loop=1002500 uV
+[    2.782865] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused      SVS: quot[13]= 636, quot_offset[13]=   0
+[    2.792686] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused      NOM: quot[13]= 866, quot_offset[13]= 230
+[    2.803508] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused    TURBO: quot[13]=1031, quot_offset[13]= 165
+[    2.814431] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused   STURBO: quot[13]=1276, quot_offset[13]= 245
+[    2.825666] cpr3_regulator_init_ctrl: apc: Default CPR mode = closed-loop
+[    2.825821] mmc0: new HS400 Enhanced strobe MMC card at address 0001
+[    2.843420] qcom,cpr3-npu-regulator a4000.npu-cpr: NPU CPR valid fuse count: 2
+[    2.849561] cpr3_mem_acc_init: npu: not using memory accelerator regulator
+[    2.856481] npu_corner: fused      NOM: open-loop= 792500 uV
+[    2.863429] npu_corner: fused    TURBO: open-loop= 837500 uV
+[    2.869344] mmcblk0: mmc0:0001 S40004 3.64 GiB
+[    2.874935] mmcblk0boot0: mmc0:0001 S40004 partition 1 4.00 MiB
+[    2.879358] qcom-pcie 20000000.pci: GPIO lookup for consumer perst
+[    2.879364] qcom-pcie 20000000.pci: using device tree for GPIO lookup
+[    2.879380] of_get_named_gpiod_flags: can't parse 'perst-gpios' property of node '/soc/pci@20000000[0]'
+[    2.879402] of_get_named_gpiod_flags: parsed 'perst-gpio' property of node '/soc/pci@20000000[0]' - status (0)
+[    2.879568] qcom-pcie 20000000.pci: IRQ mdm2ap_e911 not found
+[    2.885180] mmcblk0boot1: mmc0:0001 S40004 partition 2 4.00 MiB
+[    2.890930] mmcblk0rpmb: mmc0:0001 S40004 partition 3 4.00 MiB, chardev (240:0)
+[    2.898371] qcom-pcie 20000000.pci: host bridge /soc/pci@20000000 ranges:
+[    2.903948] qcom-pcie 20000000.pci:    IO 0x20200000..0x202fffff -> 0x20200000
+[    2.910903] qcom-pcie 20000000.pci:   MEM 0x20300000..0x27ffffff -> 0x20300000
+[    2.918263] Alternate GPT is invalid, using primary GPT.
+[    2.925210] GPT: device [179:26] (rootfs) set to be root filesystem
+[    2.930651]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 p27 p28 p29 p30 p31 p32 p33 p34
+[    3.160057] qcom-pcie 20000000.pci: Link up
+[    3.160156] qcom-pcie 20000000.pci: PCI host bridge to bus 0003:00
+[    3.163033] pci_bus 0003:00: root bus resource [bus 00-ff]
+[    3.169301] pci_bus 0003:00: root bus resource [io  0x0000-0xfffff] (bus address [0x20200000-0x202fffff])
+[    3.174753] pci_bus 0003:00: root bus resource [mem 0x20300000-0x27ffffff]
+[    3.184416] pci 0003:00:00.0: [17cb:1108] type 01 class 0x060400
+[    3.191180] pci 0003:00:00.0: reg 0x10: [mem 0x00000000-0x00000fff]
+[    3.197363] pci 0003:00:00.0: PME# supported from D0 D3hot D3cold
+[    3.208037] pci 0003:01:00.0: [17cb:1104] type 00 class 0x028000
+[    3.209697] pci 0003:01:00.0: reg 0x10: [mem 0x00000000-0x001fffff 64bit]
+[    3.216079] pci 0003:01:00.0: PME# supported from D0 D3hot D3cold
+[    3.226913] pci 0003:00:00.0: BAR 8: assigned [mem 0x20400000-0x205fffff]
+[    3.228400] pci 0003:00:00.0: BAR 9: assigned [mem 0x20600000-0x207fffff 64bit pref]
+[    3.235180] pci 0003:00:00.0: BAR 0: assigned [mem 0x20300000-0x20300fff]
+[    3.242989] pci 0003:00:00.0: BAR 7: assigned [io  0x1000-0x1fff]
+[    3.249675] pci 0003:01:00.0: BAR 0: assigned [mem 0x20400000-0x205fffff 64bit]
+[    3.255779] pci 0003:00:00.0: PCI bridge to [bus 01-ff]
+[    3.262863] pci 0003:00:00.0:   bridge window [io  0x1000-0x1fff]
+[    3.268067] pci 0003:00:00.0:   bridge window [mem 0x20400000-0x205fffff]
+[    3.274323] pci 0003:00:00.0:   bridge window [mem 0x20600000-0x207fffff 64bit pref]
+[    3.281140] PCIe: RC enabled during bootup
+[    3.288940] qcom-pcie 20000000.pci: Received Link up event for RC 0
+[    3.292971] qcom-pcie 18000000.pci: GPIO lookup for consumer perst
+[    3.292976] qcom-pcie 18000000.pci: using device tree for GPIO lookup
+[    3.292992] of_get_named_gpiod_flags: can't parse 'perst-gpios' property of node '/soc/pci@18000000[0]'
+[    3.293014] of_get_named_gpiod_flags: parsed 'perst-gpio' property of node '/soc/pci@18000000[0]' - status (0)
+[    3.293190] qcom-pcie 18000000.pci: IRQ mdm2ap_e911 not found
+[    3.301583] qcom-pcie 18000000.pci: host bridge /soc/pci@18000000 ranges:
+[    3.304894] qcom-pcie 18000000.pci:    IO 0x18200000..0x182fffff -> 0x18200000
+[    3.311668] qcom-pcie 18000000.pci:   MEM 0x18300000..0x1fffffff -> 0x18300000
+[    3.540055] qcom-pcie 18000000.pci: Link up
+[    3.540151] qcom-pcie 18000000.pci: PCI host bridge to bus 0004:00
+[    3.543030] pci_bus 0004:00: root bus resource [bus 00-ff]
+[    3.549295] pci_bus 0004:00: root bus resource [io  0x100000-0x1fffff] (bus address [0x18200000-0x182fffff])
+[    3.554751] pci_bus 0004:00: root bus resource [mem 0x18300000-0x1fffffff]
+[    3.564752] pci 0004:00:00.0: [17cb:1108] type 01 class 0x060400
+[    3.571433] pci 0004:00:00.0: reg 0x10: [mem 0x00000000-0x00000fff]
+[    3.577619] pci 0004:00:00.0: PME# supported from D0 D3hot D3cold
+[    3.588171] pci 0004:01:00.0: [17cb:1104] type 00 class 0x028000
+[    3.589954] pci 0004:01:00.0: reg 0x10: [mem 0x00000000-0x001fffff 64bit]
+[    3.596337] pci 0004:01:00.0: PME# supported from D0 D3hot D3cold
+[    3.607145] pci 0004:00:00.0: BAR 8: assigned [mem 0x18400000-0x185fffff]
+[    3.608670] pci 0004:00:00.0: BAR 9: assigned [mem 0x18600000-0x187fffff 64bit pref]
+[    3.615427] pci 0004:00:00.0: BAR 0: assigned [mem 0x18300000-0x18300fff]
+[    3.623246] pci 0004:00:00.0: BAR 7: assigned [io  0x100000-0x100fff]
+[    3.629932] pci 0004:01:00.0: BAR 0: assigned [mem 0x18400000-0x185fffff 64bit]
+[    3.636385] pci 0004:00:00.0: PCI bridge to [bus 01-ff]
+[    3.643469] pci 0004:00:00.0:   bridge window [io  0x100000-0x100fff]
+[    3.648678] pci 0004:00:00.0:   bridge window [mem 0x18400000-0x185fffff]
+[    3.655269] pci 0004:00:00.0:   bridge window [mem 0x18600000-0x187fffff 64bit pref]
+[    3.662085] PCIe: RC enabled during bootup
+[    3.669886] qcom-pcie 18000000.pci: Received Link up event for RC 0
+[    3.674231] core: _opp_supported_by_regulators: OPP minuV: 0 maxuV: 0, not supported by regulator
+[    3.679943] cpu cpu0: _opp_add: OPP not supported by regulators (0)
+[    3.689291] cpufreq: cpufreq_online: CPU0: Running at unlisted freq: 24000 KHz
+[    3.696182] cpufreq: cpufreq_online: CPU0: Unlisted initial frequency changed to: 936000 KHz
+[    3.704122] coresight-tmc 6048000.tmc: invalid cti data
+[    3.710974] sps_register_bam_device: sps:BAM 0x0000000006064000 is registered
+[    3.716099] coresight coresight-stm: STM32 initialized
+[    3.723258] hctosys: unable to open rtc device (rtc0)
+[    3.728179] of_cfs_init
+[    3.733320] of_cfs_init: OK
+[    3.735663] clk: Not disabling unused clocks
+[    3.742671] VFS: Mounted root (squashfs filesystem) readonly on device 179:26.
+[    3.742929] Freeing unused kernel memory: 576K
+[    3.778554] Run /sbin/init as init process
+[    3.914117] init: Console is alive
+[    3.914181] init: - watchdog -
+[    4.419811] kmodloader: loading kernel modules from /etc/modules-boot.d/*
+[    4.428707] usbcore: registered new interface driver usbfs
+[    4.428733] usbcore: registered new interface driver hub
+[    4.433083] usbcore: registered new device driver usb
+[    4.439466] Button Hotplug driver version 0.4.1
+[    4.443862] of_get_named_gpiod_flags: parsed 'gpios' property of node '/soc/gpio_keys/button@1[0]' - status (0)
+[    4.443872] of_get_named_gpiod_flags: parsed 'gpios' property of node '/soc/gpio_keys/button@2[0]' - status (0)
+[    4.443883] gpio-484 (wps): gpiod_set_debounce: missing set() or set_config() operations
+[    4.443888] gpio-497 (reset): gpiod_set_debounce: missing set() or set_config() operations
+[    4.444322] gre: GRE over IPv4 demultiplexor driver
+[    4.448597] PPP generic driver version 2.4.2
+[    4.452840] NET: Registered protocol family 24
+[    4.457378] PPTP driver version 0.8.5
+[    4.462570] ops_conntrack4: t=4294937741 load ops_conntrack4.ko
+[    4.465392] ops_conntrack6: t=4294937741 load ops_conntrack6.ko
+[    4.471971] SCSI subsystem initialized
+[    4.478736] libata version 3.00 loaded.
+[    4.479795] qcom-qusb2-phy 7b000.qusb: 7b000.qusb supply vdda-pll not found, using dummy regulator
+[    4.480668] qcom-qusb2-phy 7b000.qusb: 7b000.qusb supply vdda-phy-dpdm not found, using dummy regulator
+[    4.489698] qcom-qusb2-phy 7b000.qusb: Registered Qcom-QUSB2 phy
+[    4.499319] dwc3-qcom 8af8800.usb3: GPIO lookup for consumer device-power
+[    4.499322] dwc3-qcom 8af8800.usb3: using device tree for GPIO lookup
+[    4.499329] of_get_named_gpiod_flags: can't parse 'device-power-gpios' property of node '/soc/usb3@8A00000[0]'
+[    4.499334] of_get_named_gpiod_flags: can't parse 'device-power-gpio' property of node '/soc/usb3@8A00000[0]'
+[    4.499338] dwc3-qcom 8af8800.usb3: using lookup tables for GPIO lookup
+[    4.499340] dwc3-qcom 8af8800.usb3: No GPIO consumer device-power found
+[    4.506984] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    4.507008] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+[    4.512215] xhci-hcd xhci-hcd.0.auto: hcc params 0x0220fe65 hci version 0x110 quirks 0x0000000000010010
+[    4.518928] xhci-hcd xhci-hcd.0.auto: irq 157, io mem 0x08a00000
+[    4.528501] hub 1-0:1.0: USB hub found
+[    4.534531] hub 1-0:1.0: 1 port detected
+[    4.538179] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    4.542235] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+[    4.547458] xhci-hcd xhci-hcd.0.auto: Host supports USB 3.0 SuperSpeed
+[    4.555026] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    4.561756] hub 2-0:1.0: USB hub found
+[    4.569859] hub 2-0:1.0: 1 port detected
+[    4.578095] of_get_named_gpiod_flags: parsed 'gpios' property of node '/soc/nsb_leds@0/pwr_r[0]' - status (0)
+[    4.578102] no flags found for gpios
+[    4.578141] of_get_named_gpiod_flags: parsed 'gpios' property of node '/soc/nsb_leds@0/pwr_g[0]' - status (0)
+[    4.578145] no flags found for gpios
+[    4.578167] of_get_named_gpiod_flags: parsed 'gpios' property of node '/soc/nsb_leds@0/pwr_a[0]' - status (0)
+[    4.578170] no flags found for gpios
+[    4.578192] of_get_named_gpiod_flags: parsed 'gpios' property of node '/soc/nsb_leds@0/wps_g[0]' - status (0)
+[    4.578195] no flags found for gpios
+[    4.578216] of_get_named_gpiod_flags: parsed 'gpios' property of node '/soc/nsb_leds@0/wps_r[0]' - status (0)
+[    4.578219] no flags found for gpios
+[    4.578240] of_get_named_gpiod_flags: parsed 'gpios' property of node '/soc/nsb_leds@0/wlan_led[0]' - status (0)
+[    4.578243] no flags found for gpios
+[    4.578263] of_get_named_gpiod_flags: parsed 'gpios' property of node '/soc/nsb_leds@0/inet_led[0]' - status (0)
+[    4.578267] no flags found for gpios
+[    4.578287] of_get_named_gpiod_flags: parsed 'gpios' property of node '/soc/nsb_leds@0/inet_r[0]' - status (0)
+[    4.578290] no flags found for gpios
+[    4.578310] of_get_named_gpiod_flags: parsed 'gpios' property of node '/soc/nsb_leds@0/inet_g[0]' - status (0)
+[    4.578313] no flags found for gpios
+[    4.578333] of_get_named_gpiod_flags: parsed 'gpios' property of node '/soc/nsb_leds@0/inet_a[0]' - status (0)
+[    4.578336] no flags found for gpios
+[    4.578418] of_get_named_gpiod_flags: parsed 'gpios' property of node '/soc/leds/led@64[0]' - status (0)
+[    4.578421] no flags found for gpios
+[    4.579153] usbcore: registered new interface driver usb-storage
+[    4.579517] usbcore: registered new interface driver uas
+[    4.584252] kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+[    4.590523] init: - preinit -
+[   18.102483] mount_root: no extroot check <<<<<<<<<<
+[   18.241641] EXT4-fs (loop0): recovery complete
+[   18.242542] EXT4-fs (loop0): mounted filesystem with ordered data mode. Opts: (null)
+[   18.245024] mount_root: mount_overlay: no extroot check
+[   18.253177] mount_root: switching to ext4 overlay
+[   18.266101] overlayfs: "xino" feature enabled using 32 upper inode bits.
+[  408.343142] procd: - early -
+[  408.343167] procd: - watchdog -
+[  408.864729] procd: - watchdog -
+[  408.864794] procd: - ubus -
+[  408.916350] procd: - init -
+[  408.952390] cnss: INFO: IPC Logging is disabled!
+[  408.953330] cnss[2]: INFO: Platform driver probed successfully. plat 0000000046d07b55 tgt 0xfffa
+[  408.956189] remoteproc remoteproc1: QCN9000_PCI0 is available
+[  408.964934] cnss[27]: INFO: Platform driver probed successfully. plat 00000000b3309649 tgt 0x1104
+[  408.970567] remoteproc remoteproc2: QCN9000_PCI1 is available
+[  408.979421] cnss[28]: INFO: Platform driver probed successfully. plat 00000000d3ec268f tgt 0x1104
+[  408.985445] cnss[27]: INFO: PCI device 000000001c17f979 probed successfully
+[  408.994129] cnss[28]: INFO: PCI device 000000004a60fa2d probed successfully
+[  409.000901] cnss: INFO: cnss_plat_ipc_qmi_svc_init: CNSS Platform IPC QMI Service is started
+[  409.272405] EXT4-fs (loop1): recovery complete
+[  409.273404] EXT4-fs (loop1): mounted filesystem with ordered data mode. Opts: (null)
+[  409.338676] cnss: INFO: cnss_plat_ipc_qmi_reg_client_req_handler: CNSS Daemon Connected. QMI Socket Node: 1 Port: 16393
+[  409.338697] cnss: INFO: CNSS Daemon connected
+[  409.348446] cnss: INFO: cnss_plat_ipc_qmi_init_setup_req_handler: MAC: 0 HW_TRC: 0 CAL: 0
+[  409.476913] EXT4-fs (loop2): recovery complete
+[  409.477916] EXT4-fs (loop2): mounted filesystem with ordered data mode. Opts: (null)
+[  409.626557] EXT4-fs (loop3): recovery complete
+[  409.626577] EXT4-fs (loop3): mounted filesystem with ordered data mode. Opts: (null)
+[  409.741323] fuse: init (API version 7.31)
+[  410.117343] urngd: v1.0.2 started.
+[  410.815683] kmodloader: loading kernel modules from /etc/modules.d/*
+[  410.823011] [nandri.drv]Unable to get mtd info.
+[  410.823028] devno:246415360 , major:235  minor:0
+[  410.823071] nandri module init.
+[  410.830367] Mnemonic is Beacon 10
+[  410.832582] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[  410.906373] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[  410.906468] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[  410.911784] platform regulatory.0: Falling back to sysfs fallback for: regulatory.db
+[  410.921009] [extfs] devno:245366784 major:234  minor:0
+[  410.928313] [extfs.drv] error: cannot get MTD device
+[  410.933288] [extfs.drv]Unable to get mtd info.
+[  410.938335] nsb extfs get nand flash extfs patition failed,try to read emmc...
+[  410.946163] cfg80211: failed to load regulatory.db
+[  410.950125] [extfs.drv]module init.
+[  410.955438] ntfs: driver 2.1.32 [Flags: R/O MODULE].
+[  410.959466] [hcfg] devno:535822336 major:511  minor:0
+[  410.963209] [hcfg] try to load /usr/cfg/hcfg/3TN00201ABAA.cfg
+[  410.969310] [hcfg] try to load /usr/cfg/hcfg/3TN00201AB
+[  410.973845] [hcfg] try to load /usr/cfg/hcfg/3TN00201
+[  410.978920] [hcfg] load /usr/cfg/hcfg/3TN00201 finally
+[  410.989961] hcfg module init.
+[  410.990899] NET: Registered protocol family 15
+[  410.992611] Initializing XFRM netlink socket
+[  411.064759] ssdk_switch_device_num_init[1210]:INFO:ess-switch dts node number: 1
+[  411.064787] ssdk_dt_get_switch_node[1015]:INFO:ess-switch DT exist!
+[  411.071226] ssdk_dt_parse_access_mode[901]:INFO:switch_access_mode: local bus
+[  411.077192] ssdk_dt_parse_access_mode[914]:INFO:switchreg_base_addr: 0x3a000000
+[  411.084487] ssdk_dt_parse_access_mode[915]:INFO:switchreg_size: 0x1000000
+[  411.091604] ssdk_dt_parse_mac_mode[304]:INFO:mac mode = 0xb
+[  411.098549] ssdk_dt_parse_mac_mode[313]:INFO:mac mode1 = 0xc
+[  411.103927] ssdk_dt_parse_mac_mode[322]:INFO:mac mode2 = 0xd
+[  411.109896] ssdk_dt_parse_uniphy[341]:INFO:ess-uniphy DT exist!
+[  411.115592] ssdk_dt_parse_intf_mac[846]:INFO:dp1 MAC f8:9b:6e:34:c5:b2
+[  411.121155] ssdk_dt_parse_intf_mac[846]:INFO:dp2 MAC f8:9b:6e:34:c5:b2
+[  411.127912] ssdk_dt_parse_led[988]:INFO:current dts led_source_num is 0
+[  411.134241] ssdk_plat_init start
+[  411.258534] ssdk_gcc_clock_init[1220]:INFO:SSDK gcc clock init successfully!
+[  411.259329] ssdk_phy_driver_init[362]:INFO:dev_id = 0, phy_adress = 8, phy_id = 0xffffffff phytype doesn't match
+[  411.264637] malibu_phy_api_ops_init[2834]:INFO:qca probe malibu phy driver succeeded!
+[  411.528518] rtl8221_phy_gpio_reset[648]:INFO:GPIO483 reset PHY done
+[  411.528542] rtl8221_phy_api_ops_init[206]:INFO:qca probe rtl8221 phy driver succeeded!
+[  411.533678] regi_init[3745]:INFO:Initializing APPE!!
+[  411.778517] ssdk_ppe_reset_init[1478]:INFO:ppe reset successfully!
+[  411.778655] qca_hppe_bm_hw_init[720]:INFO:appe bm initialization
+[  411.784746] qca_hppe_qm_hw_init[914]:INFO:appe qm initialization
+[  411.790239] qca_appe_tdm_hw_init[248]:INFO:appe scheduler tdm mode =0
+[  411.795737] qca_appe_tdm_hw_init[268]:INFO:appe tdm setup num=118
+[  412.973535] qca_hppe_interface_mode_init[1264]:INFO:appe interface mode initialization
+[  412.973552] _adpt_appe_port_mux_mac_set[96]:INFO:appe port 1 mac type is 1
+[  412.980326] _adpt_appe_port_mux_mac_set[96]:INFO:appe port 2 mac type is 1
+[  412.987180] _adpt_appe_port_mux_mac_set[96]:INFO:appe port 3 mac type is 1
+[  412.994040] _adpt_appe_port_mux_mac_set[96]:INFO:appe port 4 mac type is 1
+[  413.000898] _adpt_appe_port_mux_mac_set[96]:INFO:appe port 5 mac type is 2
+[  413.007753] _adpt_appe_port_mux_mac_set[96]:INFO:appe port 6 mac type is 2
+[  413.014656] qca_appe_portctrl_hw_init[310]:INFO:appe portctrl initialization
+[  413.023602] qca_appe_rss_hash_hw_init[491]:INFO:appe rss hash initialization: hash_seed 0x6bf7b758
+[  413.028679] ssdk_switch_register[1867]:INFO:Chip version 0x2000
+[  413.037445] qca_link_polling_select[1367]:INFO:link-polling-required node does not exist
+[  413.043259] ssdk_switch_register[1893]:INFO:polling is selected
+[  413.051592] regi_init[3749]:INFO:Initializing APPE Done!!
+[  413.057275] ssdk_genl_init[211]:INFO:ssdk genl family register success.
+[  413.062795] regi_init[3821]:INFO:qca-ssdk module init succeeded!
+[  413.073289] tun: Universal TUN/TAP device driver, 1.6
+[  413.085177] (unnamed net_device) (uninitialized): ioremap OK.Size 0x4000 Ndev base 0x3a514000 macbase 0xffffffc010b34000
+[  413.085209] (unnamed net_device) (uninitialized): netif_napi_add() called with weight 128
+[  413.096482] GMAC2(ffffff8037eb4880) Invalid MAC@ - using e2:81:90:99:09:ed
+[  413.103850] GMAC5(ffffff8037ec0880) Invalid MAC@ - using 32:c4:a9:06:96:b1
+[  413.109985] (unnamed net_device) (uninitialized): ioremap OK.Size 0x200 Ndev base 0x3a001800 macbase 0xffffffc010b31800
+[  415.007011] **********************************************************
+[  415.007028] * NSS Data Plane driver
+[  415.012432] **********************************************************
+[  415.019687] l2tp_core: L2TP core driver, V2.0
+[  415.022832] l2tp_netlink: L2TP netlink interface
+[  415.027483] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[  415.032583] nat46: module (version 1182f30785e4274913f01a8c3d7e1b5437ae3819) loaded.
+[  415.038501] ip_gre: GRE over IPv4 tunneling driver
+[  415.046125] ip6_gre: GRE over IPv6 tunneling driver
+[  415.051035] Ethernet Channel Bonding Driver: v3.7.1 (April 27, 2011)
+[  415.064481] cryptodev: driver 1.10 loaded.
+[  415.067691] openvswitch: Open vSwitch switching datapath
+[  415.080965] QCA Hy-Fi multicast installation successfully
+[  415.082935] diag: failed to find diag_dload imem node
+[  415.087069] TRACK: P[0]      PMask[4]
+[  415.090388] TRACK: P[1]      PMask[4]
+[  415.093658] TRACK: P[2]      PMask[4]
+[  415.097037] TRACK: P[3]      PMask[4]
+[  415.100117] TRACK: P[4]      PMask[4]
+[  415.103292] TRACK: P[5]      PMask[4]
+[  415.106502] TRACK: P[6]      PMask[4]
+[  415.111287] QCA multicast snooping installed successfully
+[  415.113994] cannot find nss-macsec0 node
+[  415.118337] cannot find nss-macsec1 node
+[  415.122315] cannot find nss-macsec2 node
+[  415.126120] nss_macsec init success
+[  415.131032] Mirror/redirect action on
+[  415.134642] u32 classifier
+[  415.137058]     input device check on
+[  415.139690]     Actions configured
+[  415.145242] GACT probability on
+[  415.147385] Simple TC action Loaded
+[  415.152981] vlanctl: Unknown symbol bcm_vlan_handle_frame_hook (err -2)
+[  415.335305] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[  415.348557] nf_conntrack_rtsp v0.7 loading
+[  415.353268] nf_nat_rtsp v0.7 loading
+[  415.360434] PPP MPPE Compression module registered
+[  415.362114] wireguard: WireGuard 1.0.20200611 loaded. See www.wireguard.com for information.
+[  415.364103] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[  415.383316] xt_time: kernel timezone is -0000
+[  415.489179] vlanctl: Unknown symbol bcm_vlan_handle_frame_hook (err -2)
+[  415.538720] kmodloader: 2 modules could not be probed
+[  415.538785] kmodloader: - ptyconsole - 0
+[  415.542746] kmodloader: - vlanctl - 0
+[  415.780160] nss-dp 3a001200.dp3 eth2: PHY Link up speed: 1000
+[  416.058539] IPv6: ADDRCONF(NETDEV_CHANGE): eth2: link becomes ready
+[  421.741564] User specified module debug level of 1
+[  422.277385] remoteproc remoteproc0: powering up cd00000.remoteproc
+[  422.283788] remoteproc remoteproc0: Booting fw image IPQ9574/q6_fw.mdt, size 8140
+[  422.607928] Subsystem error monitoring/handling services are up
+[  422.607965] qcom-q6v5-wcss-pil cd00000.remoteproc: QDSP6SS Version : 0x30010000
+[  422.612655] qcom-q6v5-wcss-pil cd00000.remoteproc: WCSS Version : 0x10000000
+[  422.663702] cnss[2]: INFO: QMI WLFW service connected, state: 0x1
+[  422.670814] cnss[2]: INFO: device_id : 65530 mem mode : [0]
+[  422.670826] cnss[2]: INFO: platform name: Qualcomm Technologies, Inc. IPQ9574/AP-AL02-C2
+[  422.671818] diag: In diag_send_peripheral_buffering_mode, buffering flag not set for 2
+[  422.693608] cnss[2]: INFO: Target capability: chip_id: 0x0, chip_family: 0x4, board_id: 0xff, soc_id: 0xffffffff, fw_version: 0x270b915f, fw_build_timestamp: 2022-05-23 10:25, otp_version: 0x0 eeprom_caldata_read_timeout 0s bdf_dnld_method 1
+[  422.696904] cnss[2]: INFO: Downloading BDF: IPQ9574/regdb.bin, size: 24278
+[  422.728833] cnss[2]: INFO: Downloading BDF: IPQ9574/bdwlan.b20, size: 131072
+[  422.738545] cnss[2]: INFO: Waiting for FW ready. Device: 0xfffa, FW ready timeout: 15 seconds
+[  422.787073] cnss[2]: INFO: Downloading BDF: IPQ9574/caldata.bin, size: 131072
+[  422.858519] cnss[2]: INFO: FW ready received for device 0xfffa
+[  422.863782] cnss[2]: INFO: Sending mode message, mode: MISSION(0), state: 0x7
+[  422.870760] wlan: [2534:D:dfs] WLAN_DEBUG_DFS1 : dfs_psoc_obj_create_notification: DFS obj attach to psoc successfully
+[  423.077377] of_get_named_gpiod_flags: parsed 'led-gpio' property of node '/soc/wifi@c0000000[0]' - status (0)
+[  423.079043] remoteproc remoteproc0: remote processor cd00000.remoteproc is now up
+[  423.079085] remoteproc remoteproc1: powering up QCN9000_PCI0
+[  423.330568] remoteproc remoteproc1: Booting fw image qcn9000/amss.bin, size 3963312
+[  423.330649] cnss_pci 0003:01:00.0: BAR 0: assigned [mem 0x20400000-0x205fffff 64bit]
+[  423.337072] cnss_pci 0003:01:00.0: enabling device (0000 -> 0002)
+[  423.345911] cnss[27]: INFO: SOC VERSION INFO: Family num: 0x4, Device num: 0xd, Major Ver: 0x1, Minor Ver: 0x0
+[  423.351542] cnss[27]: INFO: Setting 0x20 to QRTR_NODE_ID_REG
+[  423.360889] cnss[27]: INFO: Value from QRTR_NODE_ID_REG: 0x20
+[  423.366701] mhi mhi0: Requested to power ON
+[  423.372455] mhi mhi0: Power on setup success
+[  423.478553] mhi mhi0: Wait for device to enter SBL or Mission mode
+[  423.523902] cnss[27]: INFO: MHI status cb is called with reason MISSION MODE(5)
+[  423.524030] mhi_uci mhi0_LOOPBACK: channel:LOOPBACK successfully probed
+[  423.533540] cnss[27]: INFO: QMI WLFW service connected, state: 0x11
+[  423.537850] cnss[27]: INFO: FW INI CFG file qcn9000/fw_ini_cfg.bin is present
+[  423.542862] cnss[27]: INFO: device_id : 4356 mem mode : [0]
+[  423.550168] cnss[27]: INFO: platform name: Qualcomm Technologies, Inc. IPQ9574/AP-AL02-C2
+[  423.551410] cnss[27]: INFO: FW File 0 download
+[  423.565373] cnss[27]: INFO: Adding dynamic paging to mhi buf table
+[  423.573026] cnss[27]: INFO: Target capability: chip_id: 0x0, chip_family: 0x0, board_id: 0xff, soc_id: 0xffffffff, fw_version: 0x270b915f, fw_build_timestamp: 2022-05-23 09:29, otp_version: 0x0 eeprom_caldata_read_timeout 0s bdf_dnld_method 1
+[  423.574484] cnss[27]: INFO: Downloading BDF: qcn9000/regdb.bin, size: 24278
+[  423.607131] cnss[27]: INFO: Downloading BDF: qcn9000/bdwlan.ba3, size: 131072
+[  423.638168] cnss[27]: INFO: Downloading BDF: qcn9000/caldata_1.bin, size: 131072
+[  423.648536] cnss[27]: INFO: Waiting for FW ready. Device: 0x1104, FW ready timeout: 15 seconds
+[  423.768524] cnss[27]: INFO: FW ready received for device 0x1104
+[  423.771021] cnss[27]: INFO: Sending mode message, mode: MISSION(0), state: 0x17
+[  423.791260] wlan: [2534:D:dfs] WLAN_DEBUG_DFS1 : dfs_psoc_obj_create_notification: DFS obj attach to psoc successfully
+[  423.796848] debugfs: Directory 'CONFIG' with parent 'qdf' already present!
+[  424.310718] remoteproc remoteproc1: remote processor QCN9000_PCI0 is now up
+[  424.310914] remoteproc remoteproc2: powering up QCN9000_PCI1
+[  424.318189] remoteproc remoteproc2: Booting fw image qcn9000/amss.bin, size 3963312
+[  424.322486] cnss_pci 0004:01:00.0: BAR 0: assigned [mem 0x18400000-0x185fffff 64bit]
+[  424.329844] cnss_pci 0004:01:00.0: enabling device (0000 -> 0002)
+[  424.338632] cnss[28]: INFO: SOC VERSION INFO: Family num: 0x4, Device num: 0xd, Major Ver: 0x1, Minor Ver: 0x0
+[  424.344287] cnss[28]: INFO: Setting 0x21 to QRTR_NODE_ID_REG
+[  424.353663] cnss[28]: INFO: Value from QRTR_NODE_ID_REG: 0x21
+[  424.359453] mhi mhi1: Requested to power ON
+[  424.365191] mhi mhi1: Power on setup success
+[  424.468559] mhi mhi1: Wait for device to enter SBL or Mission mode
+[  424.513801] cnss[28]: INFO: MHI status cb is called with reason MISSION MODE(5)
+[  424.513935] mhi_uci mhi1_LOOPBACK: channel:LOOPBACK successfully probed
+[  424.523453] cnss[28]: INFO: QMI WLFW service connected, state: 0x11
+[  424.527697] cnss[28]: INFO: FW INI CFG file qcn9000/fw_ini_cfg.bin is present
+[  424.532759] cnss[28]: INFO: device_id : 4356 mem mode : [0]
+[  424.540042] cnss[28]: INFO: platform name: Qualcomm Technologies, Inc. IPQ9574/AP-AL02-C2
+[  424.541230] cnss[28]: INFO: FW File 0 download
+[  424.555067] cnss[28]: INFO: Adding dynamic paging to mhi buf table
+[  424.562891] cnss[28]: INFO: Target capability: chip_id: 0x0, chip_family: 0x0, board_id: 0xff, soc_id: 0xffffffff, fw_version: 0x270b915f, fw_build_timestamp: 2022-05-23 09:29, otp_version: 0x0 eeprom_caldata_read_timeout 0s bdf_dnld_method 1
+[  424.564349] cnss[28]: INFO: Downloading BDF: qcn9000/regdb.bin, size: 24278
+[  424.597382] cnss[28]: INFO: Downloading BDF: qcn9000/bdwlan.ba2, size: 131072
+[  424.628558] cnss[28]: INFO: Waiting for FW ready. Device: 0x1104, FW ready timeout: 15 seconds
+[  424.633728] cnss[28]: INFO: Downloading BDF: qcn9000/caldata_2.bin, size: 131072
+[  424.748520] cnss[28]: INFO: FW ready received for device 0x1104
+[  424.751017] cnss[28]: INFO: Sending mode message, mode: MISSION(0), state: 0x17
+[  424.771277] wlan: [2534:D:dfs] WLAN_DEBUG_DFS1 : dfs_psoc_obj_create_notification: DFS obj attach to psoc successfully
+[  424.775836] debugfs: Directory 'CONFIG' with parent 'qdf' already present!
+[  424.780865] debugfs: File 'cmdresp' in directory 'qdf' already present!
+[  425.297074] remoteproc remoteproc2: remote processor QCN9000_PCI1 is now up
+[  425.311811] ath_pktlog: module license 'Proprietary' taints kernel.
+[  425.311829] Disabling lock debugging due to kernel taint
+[  431.330713] ECM init
+[  431.330750] ECM database jhash random seed: 0xfd877e38
+[  431.398747] ECM init complete
+[  431.404247] ECM OVS Test INIT
+[  431.622621] br-lan: using kernel STP
+[  431.623492] br-lan: port 1(eth1) entered blocking state
+[  431.625247] br-lan: port 1(eth1) entered disabled state
+[  431.630935] device eth1 entered promiscuous mode
+[  431.637677] nss-dp 3a001200.dp3 eth2: PHY Link is down
+[  431.641727] br-lan: port 2(eth2) entered blocking state
+[  431.645232] br-lan: port 2(eth2) entered disabled state
+[  431.651155] device eth2 entered promiscuous mode
+[  431.655935] br-lan: port 2(eth2) entered blocking state
+[  431.660438] br-lan: port 2(eth2) entered listening state
+[  431.667205] br-lan: port 3(eth3) entered blocking state
+[  431.671030] br-lan: port 3(eth3) entered disabled state
+[  431.676073] device eth3 entered promiscuous mode
+[  432.302693] mc_attach: enabled snooping on br-lan.
+[  432.649531] br-lan: port 2(eth2) entered disabled state
+[  432.653565] sh (5309): drop_caches: 3
+[  433.410787] capability: warning: `cs_sudo' uses 32-bit capabilities (legacy support in use)
+[  434.728637] nss-dp 3a001200.dp3 eth2: PHY Link up speed: 1000
+[  434.728743] br-lan: port 2(eth2) entered blocking state
+[  434.733348] br-lan: port 2(eth2) entered listening state
+[  436.808538] br-lan: port 2(eth2) entered learning state
+[  438.888535] br-lan: port 2(eth2) entered forwarding state
+[  438.888554] br-lan: topology change detected, propagating
+[  438.893120] IPv6: ADDRCONF(NETDEV_CHANGE): br-lan: link becomes ready
+[  439.751832] mc_detach: disabled snooping on br-lan.
+[  444.078715] nf_nat_rtsp v0.7 loading
+[  449.993703] mc_attach: enabled snooping on br-lan.
+[  453.874264] 8021q: adding VLAN 0 to HW filter on device ath0
+[  453.874640] br-lan: port 4(ath0) entered blocking state
+[  453.879181] br-lan: port 4(ath0) entered disabled state
+[  453.884073] device ath0 entered promiscuous mode
+[  453.889453] br-lan: port 4(ath0) entered blocking state
+[  453.893995] br-lan: port 4(ath0) entered listening state
+[  454.272187] 8021q: adding VLAN 0 to HW filter on device ath1
+[  454.272529] br-lan: port 5(ath1) entered blocking state
+[  454.276899] br-lan: port 5(ath1) entered disabled state
+[  454.282309] device ath1 entered promiscuous mode
+[  454.287153] br-lan: port 5(ath1) entered blocking state
+[  454.291949] br-lan: port 5(ath1) entered listening state
+[  454.652322] 8021q: adding VLAN 0 to HW filter on device ath2
+[  454.652656] br-lan: port 6(ath2) entered blocking state
+[  454.657033] br-lan: port 6(ath2) entered disabled state
+[  454.662282] device ath2 entered promiscuous mode
+[  454.667283] br-lan: port 6(ath2) entered blocking state
+[  454.672069] br-lan: port 6(ath2) entered listening state
+[  455.928529] br-lan: port 4(ath0) entered learning state
+[  456.328566] br-lan: port 5(ath1) entered learning state
+[  456.728584] br-lan: port 6(ath2) entered learning state
+[  458.018545] br-lan: port 4(ath0) entered forwarding state
+[  458.018569] br-lan: topology change detected, propagating
+[  458.408538] br-lan: port 5(ath1) entered forwarding state
+[  458.408569] br-lan: topology change detected, propagating
+[  458.808529] br-lan: port 6(ath2) entered forwarding state
+[  458.808553] br-lan: topology change detected, propagating
+[  500.279114] nf_conntrack: default automatic helper assignment has been turned off for security reasons and CT-based  firewall rule not found. Use the iptables CT target to attach helpers instead.
+[  500.529915] DOS:udp IN=br-lan OUT= PHYSIN=eth2 MAC=f8:9b:6e:34:c5:b2:74:56:3c:4e:20:64:08:00 SRC=192.168.1.11 DST=192.168.1.1 LEN=32 TOS=0x00 PREC=0x00 TTL=64 ID=34853 PROTO=UDP SPT=63608 DPT=34054 LEN=12
+[  716.164701] DOS:udp IN=br-lan OUT= PHYSIN=eth2 MAC=f8:9b:6e:34:c5:b2:74:56:3c:4e:20:64:08:00 SRC=192.168.1.11 DST=192.168.1.1 LEN=32 TOS=0x00 PREC=0x00 TTL=64 ID=3199 PROTO=UDP SPT=59557 DPT=55437 LEN=12
+[ 1387.448753] nss-dp 3a514000.dp1 eth0: PHY Link up speed: 10000
+[ 1387.452660] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[ 1388.488699] nss-dp 3a514000.dp1 eth0: PHY Link is down
+[ 1453.422823] DOS:unexpected IN=br-lan OUT= PHYSIN=eth2 MAC=f8:9b:6e:34:c5:b2:74:56:3c:4e:20:64:08:00 SRC=192.168.1.11 DST=192.168.1.1 LEN=41 TOS=0x00 PREC=0x00 TTL=64 ID=60798 DF PROTO=TCP SPT=50131 DPT=23 WINDOW=8208 RES=0x00 ACK PSH URGP=0
+root@OpenWrt:/tmp#
