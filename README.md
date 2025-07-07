@@ -1,2 +1,2 @@
 # Nokia-BEACON10
-Nokia-BEACON10
+Nokia-BEACON10 DTS and DBF
